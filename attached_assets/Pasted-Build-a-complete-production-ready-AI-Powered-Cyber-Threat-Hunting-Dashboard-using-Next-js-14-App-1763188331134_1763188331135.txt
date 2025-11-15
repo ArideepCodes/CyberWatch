@@ -1,0 +1,239 @@
+Build a complete, production-ready “AI-Powered Cyber Threat Hunting Dashboard” using Next.js 14 (App Router), TypeScript, TailwindCSS, Prisma (SQLite), and shadcn UI.
+
+🎯 Project Goal
+
+Create a fully functional cybersecurity dashboard that shows real-time threats, logs, analytics, and AI insights, with a modern dark UI theme.
+
+📂 Required Tech Stack
+
+Next.js 14 (App Router)
+
+TypeScript
+
+TailwindCSS
+
+shadcn UI
+
+Prisma ORM + SQLite (db/custom.db)
+
+Recharts or Chart.js for analytics
+
+Leaflet for map visualization
+
+AI-powered threat explanations (simple JS logic or placeholder functions)
+
+🖥️ Core Features to Implement
+1. Dashboard Home
+
+Summary of active threats
+
+Graph showing attacks over time
+
+Live threat feed
+
+Map of attack origins
+
+Severity-level chart
+
+2. Threats Page
+
+List of all detected threats
+
+Filters: severity, IP, type
+
+Sort by timestamp
+
+View details modal
+
+3. AI Insights Page
+
+“Threat Explanation Generator”
+
+“Impact Rating”
+
+“Suggested Response Steps”
+
+“Anomaly Analysis”
+
+4. IP Lookup Page
+
+Enter IP → Show risk score
+
+Country, ISP, ASN
+
+AI summary: “Risk level and why”
+
+5. Analytics Page
+
+Bar chart (threats per type)
+
+Pie chart (severity distribution)
+
+Heatmap or timeline graph
+
+🗂️ Required Folder Structure
+
+Generate these folders and files in the Replit workspace:
+
+/src/app
+  /dashboard
+  /threats
+  /ip-lookup
+  /ai-insights
+  /analytics
+  /api
+/src/components
+/src/lib
+/prisma/schema.prisma
+/db/custom.db  ← Prisma will generate this
+
+🧩 Prisma Schema
+
+Use this schema:
+
+model Threat {
+  id        String   @id @default(cuid())
+  ip        String
+  type      String
+  severity  String
+  country   String?
+  timestamp DateTime @default(now())
+  details   String?
+  score     Int?
+}
+
+model User {
+  id       String @id @default(cuid())
+  email    String @unique
+  password String
+  role     String @default("user")
+}
+
+
+Also create a seed.ts file with sample threats.
+
+🎨 UI Requirements
+
+Dark cyber theme
+
+Neon cyan + purple accent
+
+Animated charts
+
+Modern sidebar
+
+Clean, responsive layout
+
+Reusable UI components (cards, table, badges, charts)
+
+Use shadcn UI for:
+
+Sidebar
+
+Buttons
+
+Cards
+
+Dialogs
+
+Forms
+
+⭐ VERY IMPORTANT — Add Footer with My Credits
+
+Create a global footer that appears on ALL pages.
+
+Footer text:
+
+© 2025 Developed by Arideep Kanshabanik
+GitHub | Instagram | LinkedIn | Portfolio | Email
+
+
+Footer links:
+
+GitHub: https://github.com/ArideepCodes
+
+Instagram: https://www.instagram.com/greenflaghunyaar
+
+LinkedIn: https://www.linkedin.com/in/arideep-kanshabanik
+
+Portfolio: https://arideep.framer.ai/
+
+Email: mailto:arideepkanshabanik@gmail.com
+
+Make it:
+
+Small
+
+Centered
+
+Styled with glow effect
+
+🔧 Backend Requirements
+
+Under /app/api, create routes:
+
+/api/threats
+
+/api/threat/:id
+
+/api/iplookup
+
+/api/ai/explain
+
+/api/ai/response
+
+Each should return JSON.
+
+🤖 AI Logic Requirements
+
+Add helper functions under /src/lib/ai.ts:
+
+generateThreatExplanation(threat)
+
+generateImpactRating(threat)
+
+suggestResponseSteps(threat)
+
+detectAnomalies(logs)
+
+These can be simple logic (no external API needed).
+
+🧱 Final Steps
+
+After generating all code, give setup commands:
+
+npm install
+npx prisma generate
+npx prisma migrate dev --name init
+npm run dev
+
+
+and test that the project runs inside Replit.
+
+📌 Final Instruction for Replit
+
+Please output:
+
+All code files
+
+All folder structure
+
+UI files
+
+API route files
+
+Prisma schema
+
+Seed file
+
+Tailwind + shadcn setup
+
+NO placeholders.
+Everything should be real, working, and complete.
+
+If you want, I can also write:
+
+✓ A README.md for GitHub
+✓ A Vercel deployment prompt
+✓ A logo + banner prompt
+✓ A custom loading animation
