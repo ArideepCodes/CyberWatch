@@ -11,7 +11,7 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
-        // Flat / base colors (regular buttons)
+        // Cybersecurity dark theme colors
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
@@ -75,11 +75,17 @@ export default {
           foreground: "hsl(var(--sidebar-accent-foreground) / <alpha-value>)",
           border: "var(--sidebar-accent-border)"
         },
-        status: {
-          online: "rgb(34 197 94)",
-          away: "rgb(245 158 11)",
-          busy: "rgb(239 68 68)",
-          offline: "rgb(156 163 175)",
+        // Severity indicators
+        severity: {
+          critical: "rgb(239 68 68)",
+          high: "rgb(249 115 22)",
+          medium: "rgb(234 179 8)",
+          low: "rgb(34 197 94)",
+        },
+        // Cyber accents
+        cyber: {
+          cyan: "rgb(6 182 212)",
+          purple: "rgb(168 85 247)",
         },
       },
       fontFamily: {
@@ -96,10 +102,20 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      boxShadow: {
+        "cyber-glow": "0 0 20px rgba(6, 182, 212, 0.15)",
+        "cyber-glow-lg": "0 0 30px rgba(6, 182, 212, 0.25)",
+        "purple-glow": "0 0 20px rgba(168, 85, 247, 0.15)",
       },
     },
   },
