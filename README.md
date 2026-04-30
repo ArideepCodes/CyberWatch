@@ -183,6 +183,20 @@ Portfolio: https://arideep.framer.ai
 
 Email: arideepkanshabanik@gmail.com
 
+
+🧑‍💻 Co-developer
+
+Moumi Byapari
+
+GitHub: https://github.com/Moumi2024
+
+Instagram: https://www.instagram.com/https.moumi/
+
+LinkedIn: https://www.linkedin.com/in/moumibyapari
+
+Email: byaparimoumi@gmail.com
+
+
 ⭐ Credits
 
 CyberWatch is built as a full-stack cyber intelligence dashboard project showcasing:
