@@ -1,164 +1,145 @@
-🚨 CyberWatch
-AI-Powered Cyber Threat Hunting Dashboard
+<div align="center">
 
-Live at: https://cyberwatch-vohd.onrender.com/
+# 🚨 CyberWatch
 
-CyberWatch is a modern, full-stack AI-powered cyber threat intelligence platform designed to visualize attacks, monitor live events, analyze IPs, generate insights, and help you understand the global threat landscape in real-time.
+### AI-Powered Cyber Threat Hunting Dashboard
 
-Built with React + Vite, Express.js, TailwindCSS, Leaflet, Recharts, WebSockets, and Drizzle ORM, this project delivers a responsive, high-performance cyber monitoring dashboard suitable for cybersecurity labs, SOC demos, and educational use.
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=950&lines=Real-Time+Cyber+Threat+Intelligence+Platform;AI-Powered+Security+Monitoring+Dashboard;Modern+Full-Stack+SOC+Visualization+System;Built+with+React%2C+Express+%26+WebSockets" alt="Typing SVG" />
 
-⚡ Features
-🔍 Dashboard Overview
+<br/>
 
-Real-time active threat count
+<img src="https://img.shields.io/badge/Frontend-React%20%7C%20Vite-111827?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/Backend-Express.js-111827?style=for-the-badge&logo=express&logoColor=FFFFFF"/>
+<img src="https://img.shields.io/badge/Database-Drizzle%20ORM-111827?style=for-the-badge&logo=sqlite&logoColor=3B82F6"/>
+<img src="https://img.shields.io/badge/Realtime-WebSockets-111827?style=for-the-badge&logo=socketdotio&logoColor=10B981"/>
 
-Today’s attack summary
+<br/><br/>
 
-High-severity events
+🛡️ Threat Monitoring • 🌎 Live Attack Map • 🤖 AI Insights • ⚡ Real-Time Analytics
 
-Live threat feed with IP, country & risk indicators
+<br/>
 
-Interactive attack origin map (Leaflet)
+Developed by **Arideep Kanshabanik**
 
-🛡 Threats Page
+Co-developed by **Moumi Byapari**
 
-Complete threat list
+</div>
 
-Filters by severity, country, IP, attack type
+---
 
-Timestamp-based sorting
+# 🌐 Live Demo
 
-Detailed modal view for each threat
+<div align="center">
 
-🤖 AI Insights
+## 🚀 Open CyberWatch
 
-Threat explanation generator
+### https://cyberwatch-vohd.onrender.com/
 
-Impact rating
+</div>
 
-Suggested response steps
+---
 
-Anomaly detection logic (local AI functions)
+# ✨ Overview
 
-🌎 IP Lookup
+**CyberWatch** is a modern full-stack AI-powered cyber threat intelligence platform built to visualize attacks, monitor live events, analyze suspicious IPs, and provide real-time security insights through a responsive SOC-style dashboard.
 
-Enter any IP
+The platform combines:
+- real-time monitoring
+- AI-assisted analysis
+- threat visualization
+- interactive analytics
+- modern cyber UI/UX
 
-View ASN, country, ISP
+into a professional cybersecurity intelligence system suitable for:
+- SOC demonstrations
+- cybersecurity labs
+- educational simulations
+- portfolio projects
+- threat monitoring showcases
 
-Risk score
+---
 
-AI-generated reasoning
+# 🚀 Core Features
 
-📊 Analytics
+<div align="center">
 
-Threats per type (Bar chart)
+| Feature | Description |
+|---|---|
+| 🌎 Live Attack Map | Interactive threat origin visualization |
+| 🚨 Real-Time Threat Feed | Live cyber event monitoring |
+| 🤖 AI Insights | Threat analysis & recommendations |
+| 🔍 IP Intelligence | Risk score & ASN lookup |
+| 📊 Analytics Dashboard | Charts & activity visualization |
+| ⚡ WebSocket Updates | Real-time event streaming |
+| 🎯 Threat Filters | Search & filter threats |
+| 🌙 Cyber UI | Modern dark-themed SOC dashboard |
+| 📱 Responsive Design | Works across all devices |
 
-Severity distribution (Pie / Donut)
+</div>
 
-Geo-heat activity
+---
 
-Timeline of events
+# 🔍 Dashboard Overview
 
-💠 UI / UX
+## 🚨 Threat Monitoring
+- Active threat count
+- High severity alerts
+- Live attack feed
+- Country & IP indicators
+- Threat severity levels
 
-Dark cyber-themed interface
+---
 
-Neon cyan & purple accents
+## 🌎 Interactive Threat Map
+Powered using:
+- Leaflet.js
+- Live attack origin plotting
+- Geo-based threat visualization
+- Real-time map interactions
 
-Smooth animations
+---
 
-Responsive layout
+## 🤖 AI Threat Insights
+CyberWatch includes:
+- threat explanation generator
+- anomaly detection logic
+- impact rating simulation
+- AI-generated response suggestions
 
-Custom sidebar & navigation
+---
 
-Clean, modular component structure
+## 📊 Analytics & Visualization
+- Threat distribution charts
+- Severity analytics
+- Timeline visualization
+- Geo activity monitoring
+- Attack type analysis
 
-🏗 Tech Stack
-Frontend
+---
 
-React
+# 🛠️ Tech Stack
 
-Vite
+<div align="center">
 
-TailwindCSS
+## 🎨 Frontend
+React • Vite • TailwindCSS • Recharts • Leaflet • Lucide Icons
 
-Recharts
+## ⚙️ Backend
+Express.js • WebSockets • Node.js
 
-Leaflet
+## 🗄️ Database
+Drizzle ORM • Neon / SQLite
 
-Lucide Icons
+## 🚀 Deployment
+Render • GitHub
 
-Backend
+</div>
 
-Express.js
+---
 
-WebSockets
+# 📂 Project Structure
 
-Drizzle ORM
-
-Sessions + Passport (if enabled)
-
-Node.js (Runtime)
-
-Database
-
-Drizzle ORM
-
-Neon / SQLite (depending on deployment)
-
-Hosting
-
-Render (Full-stack deployment)
-
-GitHub (Source Hosting)
-
-🚀 Deployment
-
-CyberWatch is deployed via Render using the Node.js environment.
-
-Live Deployment:
-👉 https://cyberwatch-vohd.onrender.com/
-
-To deploy yourself:
-
-1. Create a Web Service on Render
-
-Environment: Node
-
-Build command:
-
-npm install && npm run build
-
-
-Start command:
-
-npm start
-
-2. Set Environment Variables (Optional)
-
-If using Neon / external DB:
-
-DATABASE_URL=<your-database-url>
-SESSION_SECRET=<your-secret>
-
-🧪 Running Locally
-1. Clone the repo
-git clone https://github.com/ArideepCodes/CyberWatch.git
-cd CyberWatch
-
-2. Install dependencies
-npm install
-
-3. Start dev server
-npm run dev
-
-
-Local preview will be at:
-
-http://localhost:3000
-
-📁 Project Structure
+```text
 CyberWatch/
  ├── client/           # React + Vite frontend
  ├── server/           # Express.js backend
@@ -166,49 +147,5 @@ CyberWatch/
  ├── tailwind.config.ts
  ├── vite.config.ts
  ├── package.json
- ├── drizzle.config.ts # Database config
+ ├── drizzle.config.ts
  └── README.md
-
-🧑‍💻 Developer
-
-Arideep Kanshabanik 
-
-GitHub: https://github.com/ArideepCodes
-
-Instagram: https://www.instagram.com/greenflaghunyaar
-
-LinkedIn: https://www.linkedin.com/in/arideep-kanshabanik
-
-Portfolio: https://arideep.framer.ai
-
-Email: arideepkanshabanik@gmail.com
-
-
-🧑‍💻 Co-developer
-
-Moumi Byapari
-
-GitHub: https://github.com/Moumi2024
-
-Instagram: https://www.instagram.com/https.moumi/
-
-LinkedIn: https://www.linkedin.com/in/moumibyapari
-
-Email: byaparimoumi@gmail.com
-
-
-⭐ Credits
-
-CyberWatch is built as a full-stack cyber intelligence dashboard project showcasing:
-
-Real-time threat visualizations
-
-Modern UI/UX architecture
-
-AI-assisted analysis
-
-Professional full-stack deployment workflow
-
-📜 License
-
-MIT License
